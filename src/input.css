@@ -1,13 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
 @theme {
-    --font-syne: "Syne", "sans-serif";
-    --font-roboto: "Roboto", "sans-serif";
-    --font-michroma: "Michroma", "sans-serif";
-    --font-inter: "Inter", "sans-serif";
+  --font-syne: "Syne", "sans-serif";
+  --font-roboto: "Roboto", "sans-serif";
+  --font-michroma: "Michroma", "sans-serif";
+  --font-inter: "Inter", "sans-serif";
 
-    --color-redA: #CD1B27;
-    --color-grayA: #222222;
+  --color-redA: #cd1b27;
+  --color-grayA: #222222;
+  --color-grayB: #919191;
 }

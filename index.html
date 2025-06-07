@@ -1,106 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>axel</title>
+    <!-- google fonts: inter, syne, michroma and roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>axel</title>
-  <!-- google fonts: inter, syne, michroma and roboto -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
-    rel="stylesheet" />
-  <link href="./src/output.css" rel="stylesheet" />
-</head>
-
-<body class="bg-grayA text-white">
-  <header>
-    <!-- navbar: with text logo, menu bar and button -->
-    <nav class="max-w-[1240px] mx-auto flex py-3">
-      <div class="items-center flex justify-between">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+  <body class="bg-grayA text-white">
+    <header>
+      <!-- navbar: with text logo, menu bar and button -->
+      <nav class="max-w-[1240px] mx-auto flex py-3">
+        <div class="items-center flex justify-between">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-roboto">
+              <li><a class="text-white">ABOUT</a></li>
+              <li><a class="text-white">SERVICE</a></li>
+              <li><a class="text-white">RESUME</a></li>
+              <li><a class="text-white">PROJECT</a></li>
+              <li><a class="text-white">BLOG</a></li>
+            </ul>
           </div>
-          <ul tabindex="0"
-            class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-roboto">
-            <li><a class="text-white">ABOUT</a></li>
-            <li><a class="text-white">SERVICE</a></li>
-            <li><a class="text-white">RESUME</a></li>
-            <li><a class="text-white">PROJECT</a></li>
-            <li><a class="text-white">BLOG</a></li>
-          </ul>
-          </ul>
+          <a class="text-3xl font-syne font-bold text-white pr-20"
+            ><span class="text-redA">A</span>XEL.</a
+          >
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 w-[485px] justify-between font-roboto">
+              <li><a>ABOUT</a></li>
+              <li><a>SERVICE</a></li>
+              <li><a>RESUME</a></li>
+              <li><a>PROJECT</a></li>
+              <li><a>BLOG</a></li>
+            </ul>
+          </div>
         </div>
-        <a class="text-3xl font-syne font-bold text-white pr-20"><span class="text-redA">A</span>XEL.</a>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 w-[485px] justify-between font-roboto">
-            <li><a>ABOUT</a></li>
-            <li><a>SERVICE</a></li>
-            <li><a>RESUME</a></li>
-            <li><a>PROJECT</a></li>
-            <li><a>BLOG</a></li>
-          </ul>
+        <div class="navbar-end">
+          <button
+            class="btn bg-transparent hover:bg-white hover:text-black transition duration-300 border-white text-white">
+            Contact Me
+          </button>
         </div>
-      </div>
-      <div class="navbar-end">
-        <button class="btn bg-transparent hover:bg-white hover:text-black transition duration-300 border-white text-white">Contact Me</button>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main>
-    <!-- banner: header, description and buttons -->
-    <article class="max-w-[1240px] mx-auto">
-      <h1 class="font-michroma leading-20 text-7xl pt-[165px]">YOUR VISION, <br>
-        MY MISSION</h1>
-      <p class="mt-20 font-roboto opacity-50">Guiding the Creative Journey Together, Your Aspirations at the Heart of
-        Every <br>
-        Design - Where Your Unique Dreams Meet My Dedication to Craft Exceptional <br>
-        Visual Experiences</p>
-      <div class="mt-14 flex items-center font-inter">
-        <button class="btn bg-white text-black mr-5">Explore My Portfolio</button>
-        <button class="btn bg-transparent hover:bg-white hover:text-black transition duration-300 border-white text-white">Hire Me</button>
-      </div>
-    </article>
-    <!-- achievments: supposed to be counter up but mine will be counter down -->
-    <section class="max-w-[1240px] mx-auto flex justify-between mt-52">
-      <div>
-        <h3 class="text-6xl font-syne font-bold text-center mb-3">10<span class="text-redA">+</span></h3>
-        <p class="font-roboto opacity-60">Years of Design Experience</p>
-      </div>
-      <div>
-        <h3 class="text-6xl font-syne font-bold text-center mb-3">200<span class="text-redA">+</span></h3>
-        <p class="font-roboto opacity-60">Years of Design Experience</p>
-      </div>
-      <div>
-        <h3 class="text-6xl font-syne font-bold text-center mb-3">95<span class="text-redA">%</span></h3>
-        <p class="font-roboto opacity-60">Years of Design Experience</p>
-      </div>
-      <div>
-        <h3 class="text-6xl font-syne font-bold text-center mb-3">10</h3>
-        <p class="font-roboto opacity-60">Years of Design Experience</p>
-      </div>
-    </section>
-    <!-- about me: an image and introduction -->
-    <article class="max-w-[1240px] mx-auto flex justify-between mt-52">
-      <div><img src="https://i.postimg.cc/qRkS4h6d/photo.png" alt="photo.png"></div>
-      <div>
-        <h4 class="text-redA font-inter font-semibold tracking-widest mb-7">ABOUT ME</h4>
-        <h3 class="font-michroma text-5xl leading-14 mb-36">A Passionate <br>
-          Creative Designer</h3>
-        <p class="font-roboto opacity-60 leading-7">I'm Axis, a seasoned creative designer dedicated to transforming ideas into visual <br>
-          masterpieces. With over a decade of experience, I have honed my skills to deliver <br>
-          innovative and captivating designs that leave a lasting impression. Let's collaborate <br>
-          and bring your brand's story to life through the power of design.</p>
-      </div>
-    </article>
-  </main>
-  <footer></footer>
-</body>
-
+    <main>
+      <!-- banner: header, description and buttons -->
+      <article class="max-w-[1240px] mx-auto">
+        <h1 class="font-michroma leading-20 text-7xl pt-[165px]">
+          YOUR VISION, <br />
+          MY MISSION
+        </h1>
+        <p class="mt-20 font-roboto opacity-50">
+          Guiding the Creative Journey Together, Your Aspirations at the Heart
+          of Every <br />
+          Design - Where Your Unique Dreams Meet My Dedication to Craft
+          Exceptional <br />
+          Visual Experiences
+        </p>
+        <div class="mt-14 flex items-center font-inter">
+          <button class="btn bg-white text-black mr-5">
+            Explore My Portfolio
+          </button>
+          <button
+            class="btn bg-transparent hover:bg-white hover:text-black transition duration-300 border-white text-white">
+            Hire Me
+          </button>
+        </div>
+      </article>
+      <!-- achievments: supposed to be counter up but mine will be counter down -->
+      <section class="max-w-[1240px] mx-auto flex justify-between mt-52">
+        <div>
+          <h3 class="text-6xl font-syne font-bold text-center mb-3">
+            10<span class="text-redA">+</span>
+          </h3>
+          <p class="font-roboto opacity-60">Years of Design Experience</p>
+        </div>
+        <div>
+          <h3 class="text-6xl font-syne font-bold text-center mb-3">
+            200<span class="text-redA">+</span>
+          </h3>
+          <p class="font-roboto opacity-60">Years of Design Experience</p>
+        </div>
+        <div>
+          <h3 class="text-6xl font-syne font-bold text-center mb-3">
+            95<span class="text-redA">%</span>
+          </h3>
+          <p class="font-roboto opacity-60">Years of Design Experience</p>
+        </div>
+        <div>
+          <h3 class="text-6xl font-syne font-bold text-center mb-3">10</h3>
+          <p class="font-roboto opacity-60">Years of Design Experience</p>
+        </div>
+      </section>
+      <!-- about me: an image and introduction -->
+      <article class="max-w-[1240px] mx-auto flex justify-between mt-52 mb-40">
+        <div>
+          <img src="https://i.postimg.cc/qRkS4h6d/photo.png" alt="photo.png" />
+        </div>
+        <div>
+          <h4 class="text-redA font-inter font-semibold tracking-widest mb-7">
+            ABOUT ME
+          </h4>
+          <h3 class="font-michroma text-5xl leading-14 mb-36">
+            A Passionate <br />
+            Creative Designer
+          </h3>
+          <p class="font-roboto opacity-60 leading-7">
+            I'm Axis, a seasoned creative designer dedicated to transforming
+            ideas into visual <br />
+            masterpieces. With over a decade of experience, I have honed my
+            skills to deliver <br />
+            innovative and captivating designs that leave a lasting impression.
+            Let's collaborate <br />
+            and bring your brand's story to life through the power of design.
+          </p>
+        </div>
+      </article>
+      <!-- expertise: graphic design, web design, ui/ux design and illustration -->
+      <section class="max-w-[1240px] mx-auto pb-36">
+        <h3 class="font-michroma text-5xl text-center pb-14">Expertise</h3>
+        <div class="flex flex-wrap justify-around gap-8">
+          <!-- graphic design -->
+          <div class="card card-side border-grayB shadow-sm border-1">
+            <div class="px-10 py-20">
+              <img src="https://i.postimg.cc/1R776Nyk/icon.png" alt="Movie" />
+            </div>
+            <div>
+              <h3 class="card-title font-michroma text-xl pt-12 pb-20">
+                Graphic Design
+              </h3>
+              <p class="opacity-60 font-inter w-[350px]">
+                Eye-catching logos, branding materials, and marketing
+                collateral.
+              </p>
+              <h4 class="font-inter font-semibold opacity-60 italic pt-4">
+                98 Projects Completed
+              </h4>
+            </div>
+          </div>
+          <!-- web design -->
+          <div class="card card-side border-grayB shadow-sm border-1">
+            <div class="px-10 py-20">
+              <img src="https://i.postimg.cc/JnXk6gfV/icon.png" alt="Movie" />
+            </div>
+            <div>
+              <h3 class="card-title font-michroma text-xl pt-12 pb-20">
+                Web Design
+              </h3>
+              <p class="opacity-60 font-inter w-[350px]">
+                Responsive and user-friendly websites that captivate your
+                audience.
+              </p>
+              <h4 class="font-inter font-semibold opacity-60 italic pt-4">
+                98 Projects Completed
+              </h4>
+            </div>
+          </div>
+          <!-- ui/ux design -->
+          <div class="card card-side border-grayB shadow-sm border-1">
+            <div class="px-10 py-20">
+              <img src="https://i.postimg.cc/D0dbFGfx/icon.png" alt="Movie" />
+            </div>
+            <div>
+              <h3 class="card-title font-michroma text-xl pt-12 pb-20">
+                UI/UX Design
+              </h3>
+              <p class="opacity-60 font-inter w-[350px]">
+                Intuitive and engaging user interfaces for seamless digital
+                experiences.
+              </p>
+              <h4 class="font-inter font-semibold opacity-60 italic pt-4">
+                98 Projects Completed
+              </h4>
+            </div>
+          </div>
+          <!-- illustration -->
+          <div class="card card-side border-grayB shadow-sm border-1">
+            <div class="px-10 py-20">
+              <img src="https://i.postimg.cc/yYsZjLnt/icon.png" alt="Movie" />
+            </div>
+            <div>
+              <h3 class="card-title font-michroma text-xl pt-12 pb-20">
+                Illustration
+              </h3>
+              <p class="opacity-60 font-inter w-[350px]">
+                Unique and custom illustrations to convey your message
+                creatively.
+              </p>
+              <h4 class="font-inter font-semibold opacity-60 italic pt-4">
+                98 Projects Completed
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
