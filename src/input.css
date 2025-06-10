@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* custom input for tailwind css */
 @theme {
   --font-syne: "Syne", "sans-serif";
   --font-roboto: "Roboto", "sans-serif";
@@ -10,4 +11,5 @@
   --color-redA: #cd1b27;
   --color-grayA: #222222;
   --color-grayB: #919191;
+  --color-grayC: #d9d9d9;
 }
