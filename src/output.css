@@ -859,8 +859,8 @@
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
-  .pt-\[165px\] {
-    padding-top: 165px;
+  .pt-36 {
+    padding-top: calc(var(--spacing) * 36);
   }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
