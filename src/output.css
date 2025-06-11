@@ -1331,6 +1331,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
+  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -1544,6 +1547,10 @@
   .h-\[320px\] {
     height: 320px;
   }
+  .btn-wide {
+    width: 100%;
+    max-width: calc(0.25rem * 64);
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -1646,11 +1653,23 @@
   .border-grayB {
     border-color: var(--color-grayB);
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-grayA {
     background-color: var(--color-grayA);
   }
   .bg-grayC {
     background-color: var(--color-grayC);
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(https\:\/\/i\.postimg\.cc\/SxXPJTYw\/haseeb-jamil-J2jtc-Rbi-L-4-unsplash\.jpg\)\] {
+    background-image: url(https://i.postimg.cc/SxXPJTYw/haseeb-jamil-J2jtc-Rbi-L-4-unsplash.jpg);
+  }
+  .bg-\[url\(https\:\/\/i\.postimg\.cc\/d31kJTNj\/CTA\.png\)\] {
+    background-image: url(https://i.postimg.cc/d31kJTNj/CTA.png);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -1686,11 +1705,17 @@
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
   .pt-36 {
     padding-top: calc(var(--spacing) * 36);
   }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -1701,14 +1726,23 @@
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
   }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
   }
   .pb-36 {
     padding-bottom: calc(var(--spacing) * 36);
@@ -1878,6 +1912,52 @@
         --btn-bg: #0000;
         --btn-fg: var(--btn-color);
         --btn-border: var(--btn-color);
+        --btn-noise: none;
+      }
+    }
+  }
+  .btn-soft {
+    &:not(.btn-active, :hover, :active:focus, :focus-visible, :disabled, [disabled], .btn-disabled) {
+      --btn-shadow: "";
+      --btn-fg: var(--btn-color, var(--color-base-content));
+      --btn-bg: var(--btn-color, var(--color-base-content));
+      @supports (color: color-mix(in lab, red, red)) {
+        --btn-bg: color-mix(
+      in oklab,
+      var(--btn-color, var(--color-base-content)) 8%,
+      var(--color-base-100)
+    );
+      }
+      --btn-border: var(--btn-color, var(--color-base-content));
+      @supports (color: color-mix(in lab, red, red)) {
+        --btn-border: color-mix(
+      in oklab,
+      var(--btn-color, var(--color-base-content)) 10%,
+      var(--color-base-100)
+    );
+      }
+      --btn-noise: none;
+    }
+    @media (hover: none) {
+      &:hover:not(.btn-active, :active, :focus-visible, :disabled, [disabled], .btn-disabled) {
+        --btn-shadow: "";
+        --btn-fg: var(--btn-color, var(--color-base-content));
+        --btn-bg: var(--btn-color, var(--color-base-content));
+        @supports (color: color-mix(in lab, red, red)) {
+          --btn-bg: color-mix(
+        in oklab,
+        var(--btn-color, var(--color-base-content)) 8%,
+        var(--color-base-100)
+      );
+        }
+        --btn-border: var(--btn-color, var(--color-base-content));
+        @supports (color: color-mix(in lab, red, red)) {
+          --btn-border: color-mix(
+        in oklab,
+        var(--btn-color, var(--color-base-content)) 10%,
+        var(--color-base-100)
+      );
+        }
         --btn-noise: none;
       }
     }
